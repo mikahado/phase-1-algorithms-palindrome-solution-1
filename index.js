@@ -1,9 +1,42 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+function reverse(word) {
+  const wordArray = word.split("")
+  const reversedWordArray = wordArray.reverse()
+  const reversedWord = reversedWordArray.join("") 
+  return reversedWord;
 
-/* 
-  Add your pseudocode here
+      //  make a copy of a string, which prints it in reverse
+    //  if the input is the same as reversed string
+    //   return true
+    //  if the input does not match
+    //   return false
+
+
+}
+  // Write your algorithm here
+
+  //    make a function to check True/False condition of a palindrome
+
+  function isPalindrome(word){
+    const reversedWord = reverse(word);
+
+    if (word === reversedWord) {
+      return true
+    } else {
+      return false
+    }
+  
+  }
+
+
+
+/* Pseudocode: 
+
+     make a function to check True/False condition of a palindrome
+     make a copy of a string, which prints it in reverse
+     if the input is the same as reversed string
+      return true
+     if the input does not match
+      return false
 */
 
 /*
@@ -11,8 +44,12 @@ function isPalindrome(word) {
 */
 
 // You can run `node index.js` to view these console logs
+
 if (require.main === module) {
-  // add your own custom tests in here
+  
+  console.log("Expecting: true")
+  console.log("=>", isPalindrome("kayak"))
+  
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
